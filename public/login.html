@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/login.js"></script>
+
+</head>
+
+<body>
+    <div id=container>
+        <div class="divicon">
+            <img src="img/QuickBoxIcon.png" id="icon" alt="">
+        </div>
+		<div class="divform">
+			<form class="form" action="/checkLogin" method="post" accept-charset="utf-8">
+				<fieldset class="fieldsetform">
+					<legend> Login </legend>
+					Username:<input type="text" name="username" value="" placeholder="" required><br>
+					Password: <input type="password" name="password" value="" placeholder="" required><br>
+					<span id="errordisplay"></span><br>
+					<input id="loginButton" type="submit" value="Login">
+					<input id="regisButton" type="submit" value="Register">
+				</fieldset>
+			</form>
+		</div>
+        
+		
+    </div>
+
+</body>
+
+</html>

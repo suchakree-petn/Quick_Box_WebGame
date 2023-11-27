@@ -1,0 +1,151 @@
+body{
+    margin: 0;
+	background-image: url(../img/background.png);
+	background-position: center;
+	background-attachment: fixed;
+}
+.header {
+    background-color: #333;
+    color: #ffffff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#headertext{
+    color: #ffffff;
+}
+#header{
+    background-color: #333333b0;
+    border-radius: 10px;
+    
+
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.user-info {
+    margin-right: 20px;
+}
+
+.logout a {
+    color: #fff;
+    text-decoration: none;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+#tableBody{
+    background-color: #efefef;
+}
+
+th,
+td {
+    border: 2px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    
+}
+
+th {
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+#header {
+    text-align: center;
+    grid-column: 2 / span 1;
+}
+#posting{
+    text-align: center;
+    margin-top: 20px;
+    
+}
+#textmsg{
+    width: 500px;
+    height: 30px;
+}
+#postbutton{
+    width: 500px;
+}
+#playbutton{
+    margin-top: 20px;
+    margin-right: 20px;
+    width: 150px;
+    height: 30px;
+    filter: drop-shadow(7px 7px 5px #262626);
+}
+#divheader{
+    display: grid;
+    grid-template-columns:  25% auto 25%;
+}
+#divplaybutton{
+    text-align: right;
+    grid-column: 3 / span 1;
+}
+#divtable{
+    margin-left: 150px;
+    margin-right: 150px;
+    filter: drop-shadow(7px 7px 5px #262626);
+
+}
+
+.newsfeed{
+	display: flex;
+	width: 900px;
+	text-align: left;
+	font-size: 20px;
+	margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.postmsg{
+	border-radius: 20px;
+	background-color: #efefef;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+	min-width: 100%;
+    filter: drop-shadow(7px 7px 5px #262626);
+}
+.likebutton{
+    border-radius: 20px;
+    border-width: 0px;
+    min-width: 100px;
+    padding: 5px;
+    margin-left: 15px;
+    filter: drop-shadow(7px 7px 5px #262626);
+}
+.divamountlike{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.amountlikeicon{
+    margin-top: 5px;
+    width: 20px;
+}
+.amountliketext{
+    display: inline;
+    margin-left: 5px;
+}
+.likeicon{
+    width: 50px;
+    margin: 2px;
+}
+.liketext{
+    font-size: 30px;
+    margin: auto;
+}
+.postuser {
+	margin-top: 15px;
+    margin-bottom: 5px;
+}
+.posttext{
+    margin: auto;
+    word-break: break-all;
+}

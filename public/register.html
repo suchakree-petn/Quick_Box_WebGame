@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/register.js"></script>
+</head>
+
+<body>
+    <div id=container>
+        <div class="divicon">
+            <img src="img/QuickBoxIcon.png" id="icon" alt="">
+        </div>
+		<div class="divform">
+			<form class="form" action="/regisDB" method="post" accept-charset="utf-8">
+				<fieldset class="fieldsetform">
+					<legend> Register </legend>
+					Username:<input type="text" name="username" value="" placeholder="" required><br>
+					Password: <input type="new-password" name="password" value="" placeholder=""><br>
+					Re-Password: <input type="new-password" name="repassword" value="" placeholder=""><br>
+					<span id="errordisplay"></span><br>
+					<input id="regisButton" type="submit" name="submit" value="Register">
+				</fieldset>
+			</form>
+		</div>
+        
+
+    </div>
+
+</body>
+
+</html>

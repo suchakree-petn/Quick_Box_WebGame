@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
+    <link rel="stylesheet" href="css/leaderboard.css">
+    <script type="text/javascript" src="js/leaderboard.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div id="username">
+            <span>Welcome, User123!</span>
+        </div>
+        <div class="logout">
+            <a id="logout" href="/logout">Logout</a>
+        </div>
+    </div>
+    <div id="divheader">
+        <div id="header">
+            <h2 id="headertext">Leaderboard </h2>
+        </div>
+        <div id="divplaybutton"><button id="playbutton">Play</button></div>
+    </div>
+
+    <div id="divtable">
+        <table>
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <tr>
+                    <td>1</td>
+                    <td>Player 1</td>
+                    <td>1000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Player 2</td>
+                    <td>950</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </div>
+    <div id="posting">
+        <textarea name="msg" id="textmsg" value="" placeholder="" rows="4" cols="50" required></textarea>
+        <br>
+        <button id="postbutton">Post</button>
+    </div>
+    
+    <div id="feed-container">
+    </div>
+</body>
+
+</html>
