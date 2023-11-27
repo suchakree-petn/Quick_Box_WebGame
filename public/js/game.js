@@ -196,7 +196,7 @@ function Summary() {
 	bottomagain.className = "bottomagain";
 	bottomagain.innerHTML = "Play Again";
 	bottomagain.onclick = () => {
-		window.location = "index.html";
+		window.location = "game.html";
 	}
 	bottomdiv.appendChild(bottomagain);
 
