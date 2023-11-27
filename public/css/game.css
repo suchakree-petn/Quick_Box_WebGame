@@ -9,7 +9,12 @@ body{
     display: flex;
     justify-content: space-around;
 }
-
+#Startbutton{
+    height: 100%;
+    width: 100%;
+    font-size: 300%;
+    background-color: #26262600;
+}
 #layer {
     position: relative;
     width: 500px;
@@ -96,4 +101,11 @@ body{
 .bottomleader{
     grid-column: 2 / span 1;
     font-size: 20px;
+}
+#timeStartCountText{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-top: 45%;
+    font-size: 300%;
 }

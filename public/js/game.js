@@ -26,7 +26,9 @@ var username = "";
 
 function pageLoad() {
 	startGame()
+	document.getElementById('Startbutton').onclick = clickStart;
 }
+
 async function showHighScore() {
 	await fetch("/readPlayerData").then((dat) => {
 		dat.json().then((jsonData) => {
@@ -42,6 +44,7 @@ async function showHighScore() {
 		})
 	})
 }
+
 async function writePlayerScore(score) {
 	await fetch("/writePlayerScore", {
 		method: 'POST',
@@ -59,10 +62,43 @@ async function writePlayerScore(score) {
 function startGame() {
 	initialUsername();
 	InitialHighScoreDB();
-	alert("Ready");
-	addBox();
-	timeStart();
 }
+
+function clickStart(){
+	var btstart = document.getElementById("Startbutton");
+
+	btstart.remove();
+	var gameLayer = document.getElementById("layer");
+
+	var timeStartCountText = document.createElement("p");
+	timeStartCountText.id = "timeStartCountText";
+	timeStartCountText.innerHTML = 3;
+	gameLayer.appendChild(timeStartCountText);
+	timeToStart();
+}
+
+function timeToStart() {
+	var TIMER_TICK = 1000;
+	var timer = null;
+	var min = 0.05;
+	var second = min * 60;
+	var x = document.getElementById("timeStartCountText");
+	x.innerHTML = second;
+	timer = setInterval(timeCount, TIMER_TICK);
+	function timeCount() {
+		var time = document.getElementById("timeStartCountText");
+		if (time.innerHTML > 1) {
+			time.innerHTML -= 1;
+		} else if (time.innerHTML <= 1) {
+			clearInterval(timer);
+			timer = null;
+			addBox();
+			timeStart();
+			time.remove();
+		}
+	}
+}
+
 function initialUsername() {
 	var user = document.getElementById("username");
 	username = getCookie("username");

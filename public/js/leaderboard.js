@@ -66,8 +66,10 @@ function showLeaderBoard(data) {
 }
 function getData() {
     var msg = document.getElementById("textmsg").value;
-    document.getElementById("textmsg").value = "";
-    writePost(msg);
+    if(msg != ""){
+        document.getElementById("textmsg").value = "";
+        writePost(msg);
+    }
 }
 async function readPost() {
     await fetch("/readPost").then((data) => {
